@@ -3,19 +3,18 @@ html {
 }
 
 body{
+    width: 100%;
     margin: 0;
-    margin-top:11em;
-    margin-bottom:13em;
     box-sizing: border-box;
     background:url(../img/background/abstract_background.svg);
-    background-size:auto;
-    font-family: system-ui;
+    background-size: auto;
+    font-family: system-ui, sans-serif;
     background-attachment: fixed;
 }
 
 header {
     background-color: rgba(22, 38, 53, 255);
-    height: 3.5em;
+    height: 3.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,46 +24,41 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
+    padding: 0 0.5rem;
+    font-size: 1rem;
 }
 
 header p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: white;
-    margin-left: 0.5em;
 }
 
 header a {
     display: inline-block;
-    width: auto;
-    height: auto;
-    margin-right:1em;
-    padding-top:0.25em;
+    margin-right:1rem;
+    padding-top:0.25rem;
+    font-size: 1rem;
 }
 
-#header_left{
+#header_left, #header_right{
     display: flex;
     align-items: center;
     gap: 0.5em; 
+    padding: 0.5rem;
 }
 
 #header_left img {
-    width: 1.3em;
+    width: 1.3rem;
     height: auto;
 }
 
-#header_right {
-    display: flex;
-    align-items: center;
-    gap: 1em; 
-}
-
 #header_right img {
-    width: 2.8em;
+    width: 2.8rem;
     height: auto;
 }
 
 #header_right img.header_cv_logo {
-    width: 2.45em;
+    width: 2.45rem;
     height: auto;
 }
 
@@ -72,15 +66,15 @@ header a {
     background-color: rgb(22,38,53, 0.85);
     position: fixed; 
     width: 100%;
-    height:2.5em;
-    top:3.5em;
+    height:2.5rem;
+    top:3.5rem;
     z-index: 1000; 
 }
 
 .menu-nav {
     height:100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    max-width: 1400px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -93,7 +87,7 @@ header a {
 
 .menu-nav > .btn > a {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: white;
 }
 
@@ -115,38 +109,38 @@ header a {
 
 div#text_zone{
     position:relative;
-    max-width: 40em;
+    max-width: 40rem;
     margin: 0 auto;
     background-color: rgb(255, 255, 255, 1);
-    padding-left: 1.5em; 
-    font-size:1em;
+    padding-left: 1.5rem; 
+    font-size:1rem;
 }
 
 #text_zone::before {
     content: '';
     position: absolute;
-    left: -0.5em;
+    left: -0.5rem;
     top: 0;
     bottom: 0;
-    width: 0.5em;
+    width: 0.5rem;
     background-color: rgb(22,38,53, 1);
 }
 
 div#text_zone p.content_type{
     text-align:left;
-    font-size:1em;
-    padding:1.5em 1em 1em 1em;
+    font-size:1rem;
+    padding:1.5rem 1rem 1rem 1rem;
 }
 
 div#text_zone p.title_type{
     text-decoration: underline;
-    font-size:1.5em;
-    margin-bottom: -0.75em;
+    font-size:1.5rem;
+    margin-bottom: -0.75rem;
 }
 
 div#text_zone img{
-    width: 4em;
-    height: 4em; 
+    width: 4rem;
+    height: 4rem; 
 }
 
 div#text_zone a{
@@ -163,12 +157,12 @@ div#text_zone a:hover{
 div#text_zone ul.publications{
     list-style: none;
     padding-left: 0;
-    padding-top:0.25em;
+    padding-top:0.25rem;
 }
 
 div#text_zone li.publications {
   position: relative;
-  padding-left: 2em; 
+  padding-left: 2rem; 
 }
 
 div#text_zone li.publications::before {
@@ -177,58 +171,60 @@ div#text_zone li.publications::before {
   left: 0;
   top: 50%;
   transform: translateY(-50%); 
-  width: 2em;
-  height: 2em; 
+  width: 2rem;
+  height: 2rem; 
   background-image: url("../img/logo/logo_paper.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 div#text_zone ul.keywords{
-    padding:1.5em 1em 1em 2em;
+    padding:1.5rem 1rem 1rem 2rem;
 }
 
 div#text_zone li.keywords{
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 #text_zone_content {
-  padding: 1em 0.5em 0.5em 0.5em;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
 .project {
     display: flex;
     flex-direction: row;
-    margin: 1em 0em 2em 0em;
+    margin: 1rem 0.5rem 2rem 0rem;
 }
 
 .project-img {
-    width: 5em;
-    height: 5em;
+    width: 5rem;
+    height: 5rem;
     object-fit: cover;
-    margin-right: 1.5em;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
 }
 
 .project-content {
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
 }
 
 .project-desc {
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .skill-bubble {
     color: white;
-    padding: 0.25em 0.6em;
-    border-radius: 1em;
-    font-size: 0.75em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
     user-select: none;
 }
 
@@ -238,7 +234,7 @@ div#text_zone li.keywords{
 
 footer{
     background-color: rgb(22,38,53,255);
-    height: 1.75em;
+    height: 1.75rem;
     bottom:0;
     display:flex;
     flex-direction: row;
@@ -247,19 +243,61 @@ footer{
     text-align: center;
     position:fixed;
     width: 100%;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 footer p.contact{
     color:white;
-    font-size: 1em;
-    margin-left:0.5em;
+    font-size: 1rem;
+    margin-left:0.5rem;
 }
 
 footer img{
-    width: 2.75em;
-    margin-right:0.5em;
-    margin-top:0.25em;
+    width: 2.75rem;
+    margin-right:0.5rem;
+    margin-top:0.25rem;
+}
+
+@media (max-width: 2880px) {
+    html{
+        font-size: 24px;
+    }
+    body {
+        margin-top:14rem;
+        margin-bottom:14rem;
+    }
+}
+
+@media (max-width: 1920px) {
+    html{
+        font-size: 20px;
+    }
+    body {
+        margin-top:12rem;
+        margin-bottom:12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size:16px;
+    }
+    body {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+ 
+}
+
+@media (max-width: 480px) {
+    html{
+        font-size:15px;
+    }
+    body {
+        margin-top: 9rem;
+        margin-bottom: 9rem;
+    }
+ 
 }
 
 
