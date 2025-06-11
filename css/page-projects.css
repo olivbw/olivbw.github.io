@@ -1,0 +1,41 @@
+.project{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0.5rem 2rem 0rem;
+}
+
+.project-img{
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: cover;
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.project-desc{
+    margin: 0 0 0.5rem 0;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-bubble{
+    color: white;
+    padding: 0.25rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    user-select: none;
+}
+
+.skill-bubble.python { background-color: #3572A5;}
+.skill-bubble.julia {background-color: #9558B2;}
+.skill-bubble.docker {background-color: #2496ED;}

@@ -1,0 +1,23 @@
+ul.publications{
+    list-style: none;
+    padding-left: 0;
+    padding-top:0.25rem;
+}
+
+li.publications {
+  position: relative;
+  padding-left: 2rem; 
+}
+
+li.publications::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); 
+  width: 2rem;
+  height: 2rem; 
+  background-image: url("../img/logo/logo_paper.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
