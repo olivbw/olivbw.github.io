@@ -1,40 +1,9 @@
-@media (max-width: 2880px) {
-    html{
-        font-size: 24px;
-    }
-
-    body{
-        margin-top:14rem;
-        margin-bottom:14rem;
-    }
+html {
+    font-size: clamp(18px, 1.25vw, 24px);
 }
 
-@media (max-width: 1920px) {
-    html{
-        font-size: 18px;
-    }
-    body {
-        margin-top:11rem;
-        margin-bottom:11rem;
-    }
+body {
+    margin-top: clamp(8rem, 5vw, 14rem);
+    margin-bottom: clamp(8rem, 5vw, 14rem);
 }
 
-@media (max-width: 768px) {
-    html{
-        font-size:15px;
-    }
-    body {
-        margin-top: 10rem;
-        margin-bottom: 10rem;
-    }
-}
-
-@media (max-width: 480px) {
-    html{
-        font-size:14px;
-    }
-    body {
-        margin-top: 9rem;
-        margin-bottom: 9rem;
-    }
-}
