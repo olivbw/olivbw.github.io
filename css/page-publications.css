@@ -1,23 +1,24 @@
-ul.publications{
-    list-style: none;
-    padding-left: 0;
-    padding-top:0.25rem;
+ul.publications {
+  list-style: none;
+  padding-left: 0;
 }
 
 li.publications {
   position: relative;
-  padding-left: 2rem; 
+  padding-left: 2.5rem;
 }
 
-li.publications::before {
-  content: "";
+.publication-icon {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%); 
-  width: 2rem;
-  height: 2rem; 
-  background-image: url("../img/logo/logo_paper.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.publication-icon img {
+  width: 2.25rem;
+  height: 2.25rem;
+  height: auto;
+  display: block;
 }
