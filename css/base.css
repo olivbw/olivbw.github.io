@@ -106,7 +106,7 @@ header h1{
   position: absolute;
   left: 50%;
   bottom: -25%;
-  width: 100%;
+  width: 75%;
   height: 10%;
   background-color: white;
   transform: translateX(-100%) scaleX(0);
@@ -114,9 +114,8 @@ header h1{
 }
 
 .menu-nav li:hover::after {
-  transform: translateX(-50%) scaleX(0.7);
+  transform: translateX(-50%) scaleX(1);
 }
-
 
 #header-wrapper{
   position: fixed;
