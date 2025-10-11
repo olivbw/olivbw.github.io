@@ -1,37 +1,65 @@
-table {
-  border-collapse: collapse;
-  position:relative;
-  max-width: 40rem;
-  margin: 0 auto; 
-  font-size: clamp(0.85rem, 2vw, 0.9rem);
-  border: 1px solid rgba(255,255,255,0.4);
-
+#teaching-grid {
+  display: grid;
+  gap: 3rem;
 }
 
-thead th {
-  box-shadow: inset 0 -2px 0 rgba(255,255,255,0.4);
+.teaching-card {
+  background-color: var(--color-text-white);
+  border-left: 0.4rem solid var(--color-accent);
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-th, td {
-  padding: 0.5rem;
-  overflow-wrap: break-word;
-  border: 1px solid rgba(255,255,255,0.2);
+.teaching-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-th {
-  background-color: rgba(22,38,53,0.9);
-  color: white;
+.teaching-card h3 {
+  margin-top: 0;
+  color: var(--color-bg-dark);
+  font-size: 1.6rem;
 }
 
-td {
-  background-color: rgba(22,38,53,0.7);
-  color: white;
-  text-align: left;
+.teaching-card ul {
+  list-style: none;
+  display:grid;
+  gap:0.3rem;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
 }
 
-tbody tr:nth-child(even) td {
-  background-color: rgba(22,38,53,0.55);
+.teaching-card li {
+  font-size: 1.15rem;
+  color: var(--color-bg-dark);
 }
+
+.course-subtitle {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  margin-top: 0.2rem;
+}
+
+.bloc_warning{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:0.5rem;
+    margin:0;
+}
+
+.warning{
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.bloc_warning i{
+  font-size: 1.1rem;
+}
+
 
 
 

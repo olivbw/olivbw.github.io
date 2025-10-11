@@ -1,9 +1,0 @@
-html {
-    font-size: clamp(18px, 1.25vw, 22px);
-}
-
-body {
-    margin-top: clamp(8rem, 5vw, 14rem);
-    margin-bottom: clamp(8rem, 5vw, 14rem);
-}
-

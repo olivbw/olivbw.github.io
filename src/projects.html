@@ -2,92 +2,103 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Olivier Bouët-Willaumez">
+		<meta name="description" content="Research and personal projects by Olivier Bouët-Willaumez, PhD student in Computer Science at Université Paris-Est Créteil. Includes academic research projects, open-source contributions, and collaborations in machine learning and probabilistic modeling.">
+
 		<title>Projects | Olivier Bouët-Willaumez</title>
-		
-		<link rel="stylesheet" type="text/css" href="../css/base.css">
-		<link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/page-projects.css"/>
 
-		<link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
-		<link rel="shortcut icon" href="/img/favicon/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
-		<meta name="apple-mobile-web-app-title" content="olivbw" />
-		<link rel="manifest" href="/img/favicon/site.webmanifest" />
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+		<link rel="stylesheet" href="../css/base.css">
+		<link rel="stylesheet" href="../css/page-projects.css">
+		<link rel="stylesheet" href="../css/responsive.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+		<link rel="author" href="../humans.txt">
+
+		<link rel="icon" type="image/png" href="../img/favicon/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/svg+xml" href="../img/favicon/favicon.svg">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+		<link rel="manifest" href="../img/favicon/site.webmanifest">
+		<meta name="apple-mobile-web-app-title" content="olivbw">
+		<link rel="shortcut icon" href="../img/favicon/favicon.ico">
 	</head>
-	<body id="projet_body">
 
 
-	<div id="header-wrapper">
+	<body id="index_body">
 
-		<header>
-			<div id="header_left">
-				<h1 class="name">
-					Olivier Bouët-Willaumez
-				</h1>
-				<a href="https://orcid.org/0009-0001-1744-9205" target="_blank"><img src="../img/logo/ORCID_iD.svg" title="ORCID"></a>
+    <div id="wrapper_header">
+
+        <header id="header">
+            <div id="header_img">
+                 <img src="../img/logo/me.png" title="Olivier">
+            </div>
+            <div id="header_name">
+                <h1>Olivier Bouët-Willaumez</h1>
+            </div>
+            <div id="header_logo">
+                <div class="logo">
+                     <a href="../documents/CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" title="CV"></i></a>
+                </div>
+                <div class="logo">
+                    <a href="https://github.com/olivbw" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" title="GitHub"></i></a>
+                </div>
+                <div class="logo">
+                    <a href="https://scholar.google.com/citations?user=qVJcykAAAAAJ&hl=fr" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
+                </div>
+            </div>
+
+        </header>
+
+        
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="#" class="active">Projects</a></li>
+            </ul>
+        </nav>
+
+
+    </div>
+
+    <main id="main_content">
+
+        <div id="text_zone">
+			<div id="text_zone_content">
+
+                <div class="project">
+					<img src="../img/logo/BayeSBML_logo.png" alt="BayeSBML" class="project-img"/>
+					<div class="project-content">
+						<p class="project-desc"><b>BayeSBML</b> - Python library for conservation analysis and discrete probabilistic approximations to estimate parameters in biochemical networks. <a href="https://git.lacl.fr/barbot/bayesbml" target="_blank" rel="noopener noreferrer">[Source Code]</a>
+						<div class="skills">
+							<span class="skill-bubble python">Python</span>
+							<span class="skill-bubble julia">Julia</span>
+							<span class="skill-bubble docker">Docker</span>
+						</div>
+					</div>
+				</div>
+				<div class="project">
+					<img src="../img/logo/nebulanet.svg" alt="NebulaNet" class="project-img" />
+					<div class="project-content">
+						<p class="project-desc"><b>NebulaNet</b> - Python library for generating abstract SVG backgrounds using random point placement and proximity-based connectivity to produce constellation-like graph structures. <a href="https://github.com/olivbw/NebulaNet" target="_blank" rel="noopener noreferrer">[Source Code]</a>
+						<div class="skills">
+							<span class="skill-bubble python">Python</span>
+						</div>
+					</div>
+				</div>
 			</div>
-			
-			<div id="header_right">
-				<a href="../documents/CV.pdf" target="_blank"><img src="../img/logo/cv_logo.png" title="CV" class="header_cv_logo"/></a>
-				<a href="https://github.com/olivbw" target="_blank"><img src="../img/logo/logo_github.png" title="GitHub"/></a>
-				<a href="https://scholar.google.com/citations?user=qVJcykAAAAAJ&hl=fr" target="_blank"><img src="../img/logo/scholar_logo.png" title="GoogleScholar"/></a>
-			</div>
-		</header>
-
-		<div id="nav">
-
-			<nav class="menu-nav">
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="talks.html">Talks</a></li>
-					<li><a href="teaching.html">Teaching</a></li>
-					<li><a href="projects.html">Projects</a></li>
-				</ul>
-			</nav>
-
 		</div>
-	</div>
-
-	<div id="text_zone">
-		<section id="text_zone_content">
-			<div class="project">
-				<img src="../img/logo/BayeSBML_logo.png" alt="BayeSBML" class="project-img" />
-				<div class="project-content">
-					<p class="project-desc"><b>BayeSBML</b> - Python library for conservation analysis and discrete probabilistic approximations to estimate parameters in biochemical networks. <a href="https://git.lacl.fr/barbot/bayesbml" target="_blank">[Source Code]</a>
-					<div class="skills">
-					<span class="skill-bubble python">Python</span>
-					<span class="skill-bubble julia">Julia</span>
-					<span class="skill-bubble docker">Docker</span>
-					</div>
-				</div>
-			</div>
-			<div class="project">
-				<img src="../img/logo/nebulanet.svg" alt="NebulaNet" class="project-img" />
-				<div class="project-content">
-					<p class="project-desc"><b>NebulaNet</b> - Python library for generating abstract SVG backgrounds using random point placement and proximity-based connectivity to produce constellation-like graph structures. <a href="https://github.com/olivbw/NebulaNet" target="_blank">[Source Code]</a>
-					<div class="skills">
-					<span class="skill-bubble python">Python</span>
-					</div>
-				</div>
-			</div>
-
-		</section>
-	</div>
-
-	<footer>
-		<p class="contact" id="email"></p>
-		<a href="https://www.lacl.fr/en/" target="_blank"><img src="../img/logo/lacl_white.svg" title="LACL"/></a>
-	</footer>
 
 
-	<button id="scrollTopBtn" title="Go to top">
-  		<img src="../img/logo/arrow_up.png" alt="Scroll to top" />
+    </main>
+
+
+    <button id="scrollTopBtn" title="Go to top">
+  		<i class="fa-solid fa-arrow-up"></i>
 	</button>
-
-	<script src="../js/header_scroll.js"></script>
+	
 	<script src="../js/scroll_to_top.js"></script>
 	<script src="../js/email.js"></script>
 

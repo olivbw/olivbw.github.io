@@ -1,0 +1,7 @@
+#list_papers_talks{
+    display: grid;
+    gap: 2rem;
+    margin:0;
+}
+
+
