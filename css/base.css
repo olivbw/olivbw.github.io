@@ -56,6 +56,7 @@ a, p, li, .content_type {
     background-position: center;
     background-size: cover;
     padding: 1.5rem;
+    gap: 0.5rem;
 }
 
 #header #header_img {
@@ -77,7 +78,7 @@ a, p, li, .content_type {
 }
 
 #header #header_img img {
-    width: 8rem;
+    width: 9rem;
     border-radius: 100%;
     background-color: var(--color-text-light);
     border: solid 0.1rem var(--color-text-light);
@@ -162,7 +163,7 @@ a, p, li, .content_type {
     min-height: 100vh;
     background: url(../img/background/abstract_background.svg);
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,11 +174,11 @@ a, p, li, .content_type {
     background-color: var(--color-text-white);
     margin: 10% 15% 10% 15%;
     border-left: 0.5rem solid var(--color-bg-dark);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 #text_zone_content {
-    margin: 3rem;
+    margin: 3.5rem;
     display: grid;
     gap: 2.5rem;
 }
