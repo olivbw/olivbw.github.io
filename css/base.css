@@ -6,20 +6,20 @@
   --color-text-light: lightgrey;
   --color-text-white: #fff;
   --width--wrapper-header: 20%;
-  --height-header: auto;
-  --height-nav: auto;
-  --height-menu-nav: 85%;
+  --height-menu-nav: auto;
 }
 
 html {
     height: auto;
+    margin: 0;
+    padding:0;
 }
 
 
 body {
     width: 100%;
     margin: 0;
-    padding:0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     display: flex;
 }
@@ -36,21 +36,25 @@ a, p, li, .content_type {
 /* Wrapper Header */
 #wrapper_header {
     width: var(--width--wrapper-header);
-    height: 100vh;
+    height: 100dvh;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 /* Header */
 #header {
+    flex: 0 0 auto;
     display: flex;
+    width:100%;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: var(--height-header);
     background: linear-gradient(rgba(22,38,53,0.6), rgba(22,38,53,0.6)), url(../img/background/painting.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -112,8 +116,8 @@ a, p, li, .content_type {
 
 .menu-nav {
     background-color: var(--color-bg-dark);
+    flex: 1 1 auto;
     display: flex;
-    height: var(--height-nav);
     justify-content: center;
     align-items: center;
 }
@@ -126,6 +130,7 @@ a, p, li, .content_type {
     height: var(--height-menu-nav);
     padding: 0;
     margin: 0;
+    gap:1rem;
 }
 
 .menu-nav li{

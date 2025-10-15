@@ -1,20 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Zilla+Slab:wght@700&display=swap');
+
+/* =============================
+   TYPOGRAPHIE RESPONSIVE
+============================= */
 html {
-  font-size: 13px; /* mobile */
+  font-size: 13px; /* mobile par défaut */
 }
 
-@media (min-width: 480px) {
-  html { font-size: 14px; } /* tablette */
-}
+@media (min-width: 480px) { html { font-size: 14px; } }
+@media (min-width: 768px) { html { font-size: 15px; } }
+@media (min-width: 1440px) { html { font-size: 16px; } }
 
-@media (min-width: 768px) {
-  html { font-size: 15px; } /* laptop */
-}
-
-@media (min-width: 1440px) {
-  html { font-size: 16px; } /* desktop */
-}
-
-
+/* =============================
+   ÉTAT "MENU OUVERT"
+============================= */
 body.menu-open {
   overflow: hidden;
   height: 100dvh;
@@ -23,11 +22,10 @@ body.menu-open {
   touch-action: none; 
 }
 
-
-
-#burger-menu {
-  display: none;
-}
+/* =============================
+   BURGER BUTTON
+============================= */
+#burger-menu { display: none; }
 
 @media (max-width: 1025px) {
   #burger-menu {
@@ -44,172 +42,61 @@ body.menu-open {
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     transition: background-color 0.3s ease;
   }
-
-  #burger-menu:hover {
-    background-color: var(--color-accent);
-  }
-
-  #burger-menu i {
-    font-size: 1.5rem;
-    color: white;
-  }
+  #burger-menu:hover { background-color: var(--color-accent); }
+  #burger-menu i { font-size: 1.5rem; color: white; }
 }
 
-
+/* =============================
+   RESPONSIVE : MODE MOBILE
+============================= */
 @media (max-width: 1025px) {
 
-  #wrapper_header {
-    display: none;
-  }
+  /* Layout général */
+  #wrapper_header { display: none; }
+  #main_content { margin-left: 0; }
+  #text_zone { margin: 0; background-color: rgba(255,255,255,0.8); border: none; }
+  #text_zone_content { margin: 2.5rem; }
 
-  #main_content {
-    margin-left: 0;
-  }
-
-  #text_zone {
-    margin: 0;
-    background-color: rgba(255,255,255,0.8);
-    border: none;
-  }
-
-  #text_zone_content {
-    margin: 2.5rem;
-  }
-
+  /* Wrapper affiché en plein écran au clic */
   #wrapper_header.show {
     display: flex !important;
     width: 100%;
-    height: 100dvh;
     background-color: var(--color-bg-dark);
     z-index: 1500;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow: hidden;
     padding: 0;
     box-sizing: border-box;
-    animation: slideIn 0.35s ease forwards;
-  }
-
-  #wrapper_header.show #header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: var(--height-header);
-    background: linear-gradient(rgba(22,38,53,0.6), rgba(22,38,53,0.6)),
-                url(../img/background/painting.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 1.5rem;
-    gap: 2.5rem;
-  }
-
-  #wrapper_header.show #header_img img {
-    width: 11rem;
-    border-radius: 100%;
-    border: 0.1rem solid var(--color-text-light);
-    background-color: var(--color-text-light);
-  }
-
-  #wrapper_header.show #header_name {
-    text-align: center;
-  }
-
-  #wrapper_header.show #header_name h1 {
-    font-size: 2.1rem;
-    color: var(--color-text-white);
-    margin: 0;
-  }
-
-  #wrapper_header.show #header_logo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 60%;
-    text-align: center;
-  }
-
-  #wrapper_header.show .logo i {
-    color: var(--color-text-white);
-    font-size: 3.2rem;
-    transition: transform 0.5s ease, color 0.5s ease;
-  }
-
-  #wrapper_header.show .logo i:hover {
-    transform: scale(1.2);
-    color: var(--color-accent);
-  }
-
-  #wrapper_header.show .menu-nav {
-    background-color: var(--color-bg-dark);
-    display: flex;
-    height: var(--height-nav);
-    justify-content: center;
-    align-items: center;
-  }
-
-  #wrapper_header.show .menu-nav ul {
-    list-style: none;
-    display: grid;
-    text-align: center;
-    align-items: center;
-    height: var(--height-menu-nav);
-    padding: 0;
-    margin: 0;
-  }
-
-  #wrapper_header.show .menu-nav li {
-    border-bottom: thin solid lightgrey;
-  }
-
-  #wrapper_header.show .menu-nav li a {
-    font-size: 1.75rem;
-    color: var(--color-text-light);
-    text-decoration: none;
-    padding: 1rem;
-    display: inline-block;
-    transition: color 0.5s ease, text-decoration-thickness 0.5s ease;
-  }
-
-  #wrapper_header.show .menu-nav li a:hover {
-    color: var(--color-text-white);
-    text-decoration: underline;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.4rem;
-  }
-
-  #wrapper_header.show .menu-nav li a.active {
-    color: var(--color-accent);
-    text-decoration: underline;
-    text-decoration-thickness: 0.15rem;
-    text-underline-offset: 0.4rem;
-  }
-
-  @keyframes slideIn {
-    from { transform: translateX(-100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-  }
-
-  @keyframes slideOut {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(-100%); opacity: 0; }
-  }
-
-  #wrapper_header.show {
     animation: slideIn 0.4s ease forwards;
   }
 
-  #wrapper_header.hide {
-    animation: slideOut 0.4s ease forwards;
+  /* Header */
+  #wrapper_header.show #header {
+    gap: 1rem;
   }
 
-  #wrapper_header.no-animation {
-    animation: none !important;
-    transition: none !important;
+  #wrapper_header.show #header_img img { width: 11rem; }
+
+  #wrapper_header.show #header_name h1 { font-size: 2.1rem; }
+
+  #wrapper_header.show #header_logo { width: 75%; }
+
+  /* Logos */
+  #wrapper_header.show .logo i {
+    font-size: 3.2rem;
+    transition: transform 0.5s ease, color 0.5s ease;
   }
+  #wrapper_header.show .logo i:hover { transform: scale(1.2); color: var(--color-accent); }
+
+  /* Menu nav */
+  #wrapper_header.show .menu-nav ul li a { font-size: 1.75rem; }
+
+  /* Animation slide-in/out */
+  @keyframes slideIn { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+  @keyframes slideOut { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 0; } }
+
+  #wrapper_header.hide { animation: slideOut 0.4s ease forwards; }
+  #wrapper_header.no-animation { animation: none !important; transition: none !important; }
 }
-
-
 
