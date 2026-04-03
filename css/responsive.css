@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Zilla+Slab:wght@700&display=swap');
 
-/* =============================
-   TYPOGRAPHIE RESPONSIVE
-============================= */
 html {
   font-size: 13px; /* mobile par défaut */
 }
@@ -11,9 +8,6 @@ html {
 @media (min-width: 768px) { html { font-size: 15px; } }
 @media (min-width: 1440px) { html { font-size: 16px; } }
 
-/* =============================
-   ÉTAT "MENU OUVERT"
-============================= */
 body.menu-open {
   overflow: hidden;
   height: 100dvh;
@@ -22,9 +16,6 @@ body.menu-open {
   touch-action: none; 
 }
 
-/* =============================
-   BURGER BUTTON
-============================= */
 #burger-menu { display: none; }
 
 @media (max-width: 1025px) {
@@ -46,18 +37,13 @@ body.menu-open {
   #burger-menu i { font-size: 1.5rem; color: white; }
 }
 
-/* =============================
-   RESPONSIVE : MODE MOBILE
-============================= */
 @media (max-width: 1025px) {
 
-  /* Layout général */
   #wrapper_header { display: none; }
   #main_content { margin-left: 0; }
   #text_zone { margin: 0; background-color: rgba(255,255,255,0.8); border: none; }
   #text_zone_content { margin: 2.5rem; }
 
-  /* Wrapper affiché en plein écran au clic */
   #wrapper_header.show {
     display: flex !important;
     width: 100%;
@@ -71,7 +57,6 @@ body.menu-open {
     animation: slideIn 0.4s ease forwards;
   }
 
-  /* Header */
   #wrapper_header.show #header {
     gap: 1rem;
   }
@@ -82,17 +67,14 @@ body.menu-open {
 
   #wrapper_header.show #header_logo { width: 75%; }
 
-  /* Logos */
   #wrapper_header.show .logo i {
     font-size: 3.2rem;
     transition: transform 0.5s ease, color 0.5s ease;
   }
   #wrapper_header.show .logo i:hover { transform: scale(1.2); color: var(--color-accent); }
 
-  /* Menu nav */
   #wrapper_header.show .menu-nav ul li a { font-size: 1.75rem; }
 
-  /* Animation slide-in/out */
   @keyframes slideIn { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
   @keyframes slideOut { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 0; } }
 
