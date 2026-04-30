@@ -1,4 +1,11 @@
+/* TEAM */
 Developer: Olivier Bouët-Willaumez
+Role: PhD Student in Computer Science
+Location: Université Paris-Est Créteil, France
 Contact: olivier.bouet-willaumez@u-pec.fr
 GitHub: https://github.com/olivbw
 
+/* SITE */
+Site: Personal academic website
+Technology: HTML5, CSS3, JavaScript
+Hosting: GitHub Pages

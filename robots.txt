@@ -1,3 +1,4 @@
 User-agent: *
-Allow: /
-Sitemap: https://olivbw.github.io/sitemap.xml
+Disallow:
+
+Sitemap: https://bouetwillaumez.fr/sitemap.xml

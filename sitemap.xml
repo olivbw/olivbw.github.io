@@ -1,23 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://olivbw.github.io/</loc>
+    <loc>https://bouetwillaumez.fr/</loc>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://olivbw.github.io/src/publications.html</loc>
+    <loc>https://bouetwillaumez.fr/publications/</loc>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://olivbw.github.io/src/talks.html</loc>
+    <loc>https://bouetwillaumez.fr/talks/</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://olivbw.github.io/src/teaching.html</loc>
+    <loc>https://bouetwillaumez.fr/teaching/</loc>
     <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://olivbw.github.io/src/projects.html</loc>
+    <loc>https://bouetwillaumez.fr/projects/</loc>
     <priority>0.7</priority>
   </url>
+
 </urlset>
