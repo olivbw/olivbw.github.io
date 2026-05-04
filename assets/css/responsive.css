@@ -65,15 +65,18 @@ body.menu-open {
 
   #wrapper_header.show #header_name h1 { font-size: 2.1rem; }
 
-  #wrapper_header.show #header_logo { width: 75%; }
+  #wrapper_header.show #header_logo { width: 80%; }
 
   #wrapper_header.show .logo i {
-    font-size: 3.2rem;
+    font-size: 3.15rem;
     transition: transform 0.5s ease, color 0.5s ease;
   }
   #wrapper_header.show .logo i:hover { transform: scale(1.2); color: var(--color-accent); }
 
+  #wrapper_header.show .menu-nav ul { gap:2rem; margin:3.5rem;}
+
   #wrapper_header.show .menu-nav ul li a { font-size: 1.75rem; }
+
 
   @keyframes slideIn { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
   @keyframes slideOut { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-100%); opacity: 0; } }

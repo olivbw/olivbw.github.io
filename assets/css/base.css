@@ -76,7 +76,7 @@ a, p, li, .content_type {
 }
 
 #header #header_name h1 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     padding: 0;
     color: white;
 }
@@ -84,16 +84,16 @@ a, p, li, .content_type {
 #header #header_img img {
     width: 9rem;
     border-radius: 100%;
-    background-color: var(--color-text-light);
-    border: solid 0.1rem var(--color-text-light);
+    border: solid 0.2rem var(--color-bg-dark);
+    opacity: 85%;
 }
 
 #header_logo {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width:100%;
+    width: 100%;
 }
 
 #header_logo .logo {
@@ -103,7 +103,7 @@ a, p, li, .content_type {
 
 .logo i {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 2.65rem;
   transition: transform 0.5s ease;
 
 }
@@ -130,12 +130,12 @@ a, p, li, .content_type {
     height: var(--height-menu-nav);
     padding: 0;
     margin: 0;
-    gap:1rem;
+    gap: 1rem;
 }
 
 .menu-nav li{
     border-bottom: solid lightgrey;
-    border-width:thin;
+    border-width: thin;
 }
 
 .menu-nav li a {
