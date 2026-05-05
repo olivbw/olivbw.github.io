@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Zilla+Slab:wght@700&display=swap');
-
 html {
-  font-size: 13px; /* mobile par défaut */
+  font-size: 15px; /* mobile par défaut */
 }
 
-@media (min-width: 480px) { html { font-size: 14px; } }
-@media (min-width: 768px) { html { font-size: 15px; } }
-@media (min-width: 1440px) { html { font-size: 16px; } }
+@media (min-width: 480px) { html { font-size: 15px; } }
+@media (min-width: 768px) { html { font-size: 16px; } }
+@media (min-width: 1440px) { html { font-size: 17px; } }
 
 body.menu-open {
   overflow: hidden;
@@ -17,6 +15,16 @@ body.menu-open {
 }
 
 #burger-menu { display: none; }
+
+@media (max-width: 768px) {
+  #wrapper_header.show #header_img img {
+    width: 8rem;
+  }
+
+  #wrapper_header.show #header_name h1 {
+    font-size: 1.8rem; 
+  }
+}
 
 @media (max-width: 1025px) {
   #burger-menu {
@@ -61,7 +69,7 @@ body.menu-open {
     gap: 1rem;
   }
 
-  #wrapper_header.show #header_img img { width: 11rem; }
+  #wrapper_header.show #header_img img { width: 10rem; }
 
   #wrapper_header.show #header_name h1 { font-size: 2.1rem; }
 
@@ -72,8 +80,6 @@ body.menu-open {
     transition: transform 0.5s ease, color 0.5s ease;
   }
   #wrapper_header.show .logo i:hover { transform: scale(1.2); color: var(--color-accent); }
-
-  #wrapper_header.show .menu-nav ul { gap:2rem; margin:3.5rem;}
 
   #wrapper_header.show .menu-nav ul li a { font-size: 1.75rem; }
 
