@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.getElementById('burger-menu');
+  const burgerIcon = burger.querySelector('i'); // Sélection de l'icône
   const wrapper = document.getElementById('wrapper_header');
   const body = document.body;
 
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     wrapper.classList.add('hide');
     body.classList.remove('menu-open');
     burger.classList.remove('active');
+    burgerIcon.className = 'fa-solid fa-bars'; 
 
     setTimeout(() => {
       wrapper.classList.remove('hide');
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!hasVisited && isMobile) {
     wrapper.classList.add('show', 'no-animation');
     burger.classList.add('active');
+    burgerIcon.className = 'fa-solid fa-xmark'; 
     body.classList.add('menu-open');
 
     requestAnimationFrame(() => {
@@ -36,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       wrapper.classList.add('show');
       burger.classList.add('active');
+      burgerIcon.className = 'fa-solid fa-xmark'; 
       body.classList.add('menu-open');
     }
   });
