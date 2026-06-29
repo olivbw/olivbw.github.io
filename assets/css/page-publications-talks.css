@@ -8,18 +8,18 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    font-size: 0.9rem; /* Légèrement plus petit pour rester discret */
+    font-size: 0.9rem;
     font-weight: bold;
-    color: #c97d16; /* Teinte dorée/ambrée élégante, ou utilisez #2e7d32 pour un vert "succès" */
-    background-color: #fdf6ec; /* Fond très léger */
+    color: #c97d16;
+    background-color: #fdf6ec;
     padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    border: 1px solid #f5dab1;
+    border-radius: 6px;
+    border: 1px solid #c97d16;
     margin-top: 0.5rem;
 }
 
 .award-badge i{
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 
